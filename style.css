@@ -1,0 +1,794 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fdfdfd;
+}
+
+#navbar {
+  background: #010714f1;
+}
+
+.searchLogo img,
+.cart img,
+.singin img {
+  height: 18px;
+  width: 18px;
+}
+
+.primary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  margin: 0px 70px;
+}
+
+.primary .logo {
+  color: #ff9d26;
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 1.2px;
+}
+
+.search {
+  display: flex;
+}
+
+.search input {
+  padding: 8px 10px;
+  width: 450px;
+  outline: none;
+}
+
+.search .searchLogo {
+  background: #ff9d26;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 12px;
+}
+
+.search span {
+  color: #fdfdfd;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.options .cart,
+.options .singin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 8px;
+}
+
+.options .cart {
+  border-right: 0.5px solid #ff9d26;
+  padding-right: 20px;
+}
+
+.options .cart span a,
+.options .singin span a {
+  color: #ff9d26;
+  font-size: 13px;
+  margin-right: 8px;
+}
+
+.secondary {
+  background: #364053e1;
+  margin: 15px 70px;
+  padding: 12px 0px;
+  transition: 0.5s all ease-in-out;
+}
+
+.secondary ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondary ul li {
+  margin: 0px 12px;
+}
+
+.secondary ul li a {
+  color: #fdfdfd;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.secondary ul li:hover {
+  text-decoration: line-through;
+}
+
+/* CROUSAL */
+#crousal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.picture img {
+  height: 280px;
+  width: 240px;
+}
+
+.crousalContent {
+  margin-left: 100px;
+}
+
+.crousalContent h2 {
+  color: #0e0d0d;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.crousalContent h1 {
+  color: #4d76ff;
+  font-size: 3rem;
+}
+
+.crousalContent h3 {
+  color: #ec185f;
+  text-align: right;
+  font-size: 22px;
+}
+
+.crousalContent button {
+  background: #000000;
+  color: #fdfdfd;
+  padding: 8px 15px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+/* TOP DEAL */
+#topDeal {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  background: #99999913;
+  margin: 20px 0px;
+}
+
+.firstDeal img,
+.secondDeal img {
+  height: 230px;
+  width: 230px;
+}
+
+.firstDeal,
+.secondDeal {
+  width: 500px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.firstDeal {
+  background: #fff619c9;
+}
+
+.secondDeal {
+  background: #ffb549c9;
+}
+
+.firstDealContent,
+.secondDealContent {
+  margin-right: 20px;
+}
+
+.firstDealContent span,
+.secondDealContent span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.firstDealContent h2,
+.secondDealContent h2 {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.firstDealContent h3,
+.secondDealContent h3 {
+  font-size: 17px;
+  width: fit-content;
+  background: #e0d900e0;
+  padding: 2px 10px;
+}
+
+.secondDealContent h3 {
+  background: #ff9d26;
+}
+
+.firstDealContent button,
+.secondDealContent button {
+  background: #000;
+  outline: none;
+  border: none;
+  color: #fdfdfd;
+  padding: 3px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* TODAYS DEAL */
+.todaysDeal {
+  padding: 10px 70px;
+}
+
+.todaysDeal .dealHeader {
+  display: flex;
+  align-items: baseline;
+}
+
+.dealHeader h1 {
+  font-size: 24px;
+}
+
+.dealHeader span {
+  color: #4d76ff;
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.dealsContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0px 20px;
+  justify-content: center;
+}
+
+.dealsContainer .deal {
+  border: 1px solid #99999970;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+  margin: 20px;
+}
+
+.deal #heart {
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.deal img {
+  height: 150px;
+  width: 150px;
+}
+
+.deal .stars {
+  display: flex;
+  margin-top: 3px;
+}
+
+.deal h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #696969;
+}
+
+.deal .stars img {
+  height: 15px;
+  width: 15px;
+}
+
+.deal .price {
+  display: flex;
+  align-items: baseline;
+  margin-top: 5px;
+}
+
+.price span {
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+/* OFFER */
+#offer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.firstOffer,
+.secondOffer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px;
+  background: #99999918;
+  padding: 15px;
+}
+
+.firstOffer img,
+.secondOffer img {
+  height: 200px;
+  width: 200px;
+  margin-right: 25px;
+}
+
+.firstOffer h2,
+.secondOffer h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.firstOffer h1 {
+  color: #2ed6c3;
+}
+
+.firstOffer button {
+  background: #2ed6c3;
+  color: #fdfdfd;
+  border: none;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+
+.secondOffer h1 {
+  color: #0f7e71;
+}
+
+.secondOffer button {
+  background: #0f7e71;
+  color: #fdfdfd;
+  border: none;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+
+/* CATEGORIES */
+#categories {
+  padding: 10px 70px;
+  margin-top: 20px;
+}
+
+#categories h1 {
+  text-align: center;
+  font-size: 24px;
+}
+
+#categories .categoriesWrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.categoriesWrapper .category {
+  border: 1px solid #99999970;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+  margin: 20px;
+}
+
+#categories h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #696969;
+}
+
+#categories #heart {
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.category img {
+  height: 150px;
+  width: 150px;
+}
+
+.category .stars {
+  display: flex;
+  margin-top: 3px;
+}
+
+.category .stars img {
+  height: 15px;
+  width: 15px;
+}
+
+.category .price {
+  display: flex;
+  align-items: baseline;
+  margin-top: 5px;
+}
+
+.category span {
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 20px;
+  border-top: 1px solid rgb(211, 209, 209);
+  padding-top: 20px;
+}
+
+.footer .row1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 70px;
+}
+
+.onlineShooping h1,
+.policyInfo h1,
+.help h1,
+.conatct h1,
+.subscribe h1 {
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 8px;
+}
+
+.onlineShooping,
+.policyInfo,
+.help,
+.conatct,
+.subscribe {
+  margin: 10px;
+}
+
+.footer ul li {
+  color: #999999;
+  font-size: 14px;
+}
+
+.subscribe button {
+  background: #ff9d26;
+  color: #fdfdfd;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+
+.subscribe span {
+  color: #999999;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.footer .search input {
+  border: 1px solid #c0c0c0;
+}
+
+.footer .row2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+  border-top: 1px solid rgb(199, 199, 199);
+  border-bottom: 1px solid rgb(199, 199, 199);
+  padding: 30px 70px;
+  background: #dbdbdb2a;
+}
+
+.row2 .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.row2 .box img {
+  height: 30px;
+  width: 30px;
+}
+
+.box .content {
+  margin-left: 10px;
+}
+
+.box h1 {
+  font-size: 14px;
+}
+
+.box span {
+  font-size: 12px;
+  color: #555555;
+}
+
+.footer .row3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 70px;
+}
+
+.row3 .socials,
+.row3 .paymentMethods {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials img {
+  height: 20px;
+  width: 20px;
+}
+
+.paymentMethods img {
+  height: 45px;
+  width: 50px;
+}
+
+.row3 h1 {
+  font-size: 16px;
+  color: #b1b1b1;
+  font-weight: 600;
+}
+
+.followUs img {
+  margin: 5px;
+}
+
+.paymentMethods img {
+  margin: 5px;
+}
+
+/* Hamburger */
+.hamburger {
+  background: url("/assets/hamburger.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 22px;
+  width: 23px;
+  display: none;
+  z-index: 5;
+}
+
+/* Media Query */
+@media only screen and (max-width: 1040px) {
+  .search input {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 889px) {
+  .primary {
+    flex-direction: column;
+  }
+  .primary .options {
+    margin-top: 10px;
+  }
+  .primary .search {
+    margin-top: 10px;
+  }
+  .picture img {
+    height: 240px;
+    width: 200px;
+  }
+  .crousalContent {
+    margin-left: 30px;
+  }
+  .crousalContent h1 {
+    font-size: 2.2rem;
+  }
+  #topDeal {
+    flex-direction: column;
+  }
+  #offer {
+    flex-direction: column;
+  }
+  .todaysDeal {
+    padding: 10px 30px;
+  }
+  #categories {
+    padding: 10px 30px;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  .hamburger {
+    display: block;
+  }
+  .primary {
+    padding-bottom: 10px;
+  }
+  .secondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .secondary {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    left: -100vw;
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #364053e1;
+    z-index: 1;
+  }
+  .secondary ul {
+    flex-direction: column;
+  }
+  .secondary ul li {
+    margin: 15px;
+  }
+  .secondary ul li a {
+    font-size: 17px;
+  }
+  .crousalContent h1 {
+    font-size: 1.6rem;
+  }
+  .crousalContent h3 {
+    font-size: 15px;
+  }
+  .firstDeal,
+  .secondDeal {
+    width: 350px;
+  }
+  .firstDeal img,
+  .secondDeal img {
+    height: 160px;
+    width: 160px;
+  }
+  .firstDealContent h2,
+  .secondDealContent h2 {
+    font-size: 17px;
+  }
+  .firstOffer img,
+  .secondOffer img {
+    height: 160px;
+    width: 160px;
+  }
+  .firstOffer h2,
+  .secondOffer h2 {
+    font-size: 1.2rem;
+  }
+  .firstOffer h1,
+  .secondOffer h1 {
+    font-size: 20px;
+  }
+  .firstOffer button,
+  .secondOffer button {
+    margin-top: 5px;
+  }
+  .footer .row1,
+  .footer .row2,
+  .footer .row3 {
+    padding: 10px 10px;
+  }
+  .primary .search input {
+    width: 220px;
+  }
+  .footer .search input {
+    width: 200px;
+  }
+  .picture img {
+    height: 160px;
+    width: 130px;
+  }
+  .crousalContent h2 {
+    font-size: 14px;
+  }
+  .crousalContent h1 {
+    font-size: 1.1rem;
+  }
+  .crousalContent button {
+    margin-top: 5px;
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  #crousal {
+    margin: 10px 0px;
+  }
+  .dealsContainer .deal {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  #crousal {
+    flex-direction: column;
+  }
+  .crousalContent {
+    margin-top: 10px;
+  }
+  .crousalContent h3 {
+    text-align: left;
+    font-size: 18px;
+  }
+  .crousalContent h1 {
+    font-size: 25px;
+  }
+  .firstDeal,
+  .secondDeal {
+    flex-direction: column;
+    width: 250px;
+    padding: 15px 0px;
+  }
+  .firstDealContent button,
+  .secondDealContent button {
+    margin-top: 8px;
+  }
+  .firstOffer img,
+  .secondOffer img {
+    height: 100px;
+    width: 100px;
+  }
+  .primary .search input {
+    width: 210px;
+  }
+  .options .cart {
+    padding-right: none;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 315px) {
+  .primary .search input {
+    width: 180px;
+    font-size: 11px;
+  }
+  .footer .search input {
+    width: 160px;
+    font-size: 11px;
+  }
+  .options {
+    width: max-content;
+  }
+  .todaysDeal,
+  #categories {
+    padding: 10px 5px;
+  }
+  .box h1 {
+    font-size: 13px;
+  }
+  .firstOffer h2,
+  .secondOffer h2 {
+    font-size: 0.8rem;
+  }
+}
